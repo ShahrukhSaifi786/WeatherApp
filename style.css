@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+html {
+  height: 100%;
+  font-size: 100%;
+}
+body {
+  height: 100%;
+  background-color: #222;
+}
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 40px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input{
+  width: 80%;
+  border: none;
+  outline: none;
+  height: 50px;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+.search button{
+  width: 50px;
+  /* width: 15%; */
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+.search img{
+  width: 15px; 
+}
+.weather-container{
+  display: none;
+}
+.weather h1{
+  font-size: 80px;
+  font-weight: 500;
+}
+.weather h2{
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.col img{
+ width: 40px;
+ margin-right: 10px;
+}
+.humidity,.wind-speed{
+  font-size: 27px;
+  margin-top: -15px;
+}
+.error {
+  margin-top: 10px;
+  font-size: 19px;
+  display: none;
+}
+@media screen and (max-width:412px) {
+  .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    height: 200px;
+    margin-top: 5px;
+   
+
+  } 
+  .humidity,.wind-speed{
+    font-size: 20px;
+  }
+  button{
+    margin-left: 10px;
+  }
+}
